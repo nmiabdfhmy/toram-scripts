@@ -185,17 +185,17 @@ AVATAR_BOT_CR = ddict({
 })
 
 ARMOR_DTECDCDCR = ddict({
-    'dte%': 20,
+    'dte%': 21,
     'cd%': 10,
-    'cd+': 20,
-    'cr+': 23
+    'cd+': 21,
+    'cr+': 24
 })
 
 ARMOR_DTESCDCR = ddict({
-    'dte%': 20,
+    'dte%': 21,
     'str%': 10,
-    'cd+': 20,
-    'cr+': 23
+    'cd%': 10,
+    'cr+': 24
 })
 
 ARMOR_ACDCDCR = ddict({
@@ -228,8 +228,8 @@ OHS_ASCDCDCR_SCD = ddict({
     'atk%': 11,
     'cd%': 3,
     'str%': 10,
-    'cd+': 20,
-    'cr+': 23
+    'cd+': 21,
+    'cr+': 24
 })
 
 OHS_PCR = ddict({
@@ -758,4 +758,37 @@ SKILL_ACTIVE_BERSERK_THS = ddict({
 
 XTAL_W_CRIMSOM_EYED_WOLF = ddict({
     'srd%': 8
+})
+
+RING_SPECISTIDA = ddict({
+    'ppierce%': 5
+})
+
+ADD_MASQUERADE_HAT = ddict({
+    'ppierce%': 14,
+    'tumble': 1
+})
+
+ADD_XMAS_TREE = ddict({
+    'atk%': 8,
+    'ppierce%': 16
+})
+
+XTAL_W_VLAM = ddict({
+    'mp': 400,
+    'ppierce%': 7,
+    'srd%': 6
+})
+
+XTAL_ARM_DX_FIGHTER = ddict({
+    'atk%': 2,
+    'hp+': 5000,
+    'srd%': 6
+})
+
+XTAL_ADD_PRUDENT = ddict({
+    'srd%': 8,
+    'unsheathe%': 8,
+    'lrd%': 8,
+    'mp': -150
 })

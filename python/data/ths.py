@@ -141,17 +141,15 @@ THS_DTE2 = ddict({
     'cr+': 23
 })
 
-GLAD2S = ATTACH_XTALS(ADD_GLADIATOR_HELMET_MOB, [XTAL_ADD_ROYAL_OX_KING, XTAL_ADD_JUNIOR])
-
 items = ddict({
     'base stats': [BASE_STATS('str', 'dex')],
-    'main': [THS_DTE3, THS_DTE1, THS_DTE2],
+    'main': [THS_DTE1],
     'armor': [ARMOR_DTESCDCR, ARMOR_DTECDCDCR],
-    'add': [ADD_ACHING_RIGHT_ARM, ADD_CRESCENT_MOON_HELMET],
-    'ring': [RING_GLOWING_SEA_TALISMAN],
-    'avatar 1': [AVATAR_ACC_SRD, AVATAR_ACC_PP_AMPR],
-    'avatar 2': [AVATAR_TOP_SRD, AVATAR_TOP_PPIERCE],
-    'avatar 3': [AVATAR_TOP_SRD, AVATAR_BOT_PPIERCE],
+    'add': [ADD_ICE_CAPE],
+    'ring': [RING_SPECISTIDA],
+    #'avatar 1': [AVATAR_ACC_SRD, AVATAR_ACC_PP_AMPR],
+    #'avatar 2': [AVATAR_TOP_SRD, AVATAR_TOP_PPIERCE],
+    #'avatar 3': [AVATAR_TOP_SRD, AVATAR_BOT_PPIERCE],
     'berserk': [SKILL_ACTIVE_BERSERK_THS],
     'attack buff': [POTION_PEN_OIL],
     #'cp': [ddict({'atk%': 10, 'aspd%': 100})]
@@ -159,7 +157,7 @@ items = ddict({
 
 xtals = ddict({
     'main xtal': {'choices': [XTAL_W_HEXTER, XTAL_W_DEVIL_DANGO], 'slots': 2},
-    'armor xtal': {'choices': [XTAL_ANY_AGELADANIOS, XTAL_ARM_ARACHNIDEMON, XTAL_ARM_DOC_POM, XTAL_ANY_BLACK_SHADOW], 'slots': 2},
+    'armor xtal': {'choices': [XTAL_ARM_ARACHNIDEMON, XTAL_ARM_DOC_POM, XTAL_ANY_BLACK_SHADOW, XTAL_ARM_YUVERIA], 'slots': 2},
     'add xtal': {'choices': [XTAL_ADD_DARK_LORD, XTAL_ADD_ROYAL_OX_KING, XTAL_ADD_ALFENIX, XTAL_ADD_JUNIOR], 'slots': 2},
     'ring xtal': {'choices': [XTAL_ANY_BLACK_SHADOW, XTAL_ANY_GRAVICEP, XTAL_ANY_AGELADANIOS], 'slots': 2},
     #'food choice': {'choices': [ddict({'str+': 30}), ddict({'agi+': 30})], 'slots': 1}

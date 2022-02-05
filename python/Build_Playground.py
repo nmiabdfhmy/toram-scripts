@@ -1,9 +1,9 @@
 # noqa # pylint: disable=unused-wildcard-import
 from Iterate_Builds import *
 from Data import *
-from data.ktn import *
+from data.ds import *
 
-target = TARGET_KUZTO_ULTIMATE
+target = TARGET_QUASAR_ULTIMATE
 
 if __name__ == '__main__':
     #character_base.update({'matching ele': ddict({'dte%': 0})})
@@ -16,5 +16,5 @@ if __name__ == '__main__':
     #items['main'] = [UPDATE_STATS(OHS_ASCDCDCR_SCD, {'cd%': 8, 'base attack': 377})]
     #if target['graze'] == False: character_base['berserk'] = ddict({})
 
-    example = Iterate_Builds(character_base, items, xtals, target, skills, requirements={})
+    example = Iterate_Builds(character_base, items, xtals, target, skills, requirements={'cr': 125})
     best, bestBuild, bestStats = example.iterate()
