@@ -16,8 +16,8 @@ def UPDATE_STATS(base, specifics):
 
 
 def BASE_STATS(primary, secondary, balanced=False):
-    CURRENT_CAP = 235
-    CURRENT_PRIMARY_STAT_MAX = 365
+    CURRENT_CAP = 240
+    CURRENT_PRIMARY_STAT_MAX = 375
     CURRENT_SECONDARY_STAT_MAX = 247
 
     base = ddict({
@@ -234,7 +234,7 @@ OHS_ASCDCDCR_SCD = ddict({
 
 OHS_PCR = ddict({
     'type': '1h sword',
-    'base attack': 289,
+    'base attack': 304,
     'base stability': 60,
     'refine': 15,
     'ppierce%': 70,
@@ -722,6 +722,7 @@ OHS_GEMMA_SPADA = ddict({
 ADD_KITTY_TAIL = ddict({
     'stability%': 15,
     'agi%': 5,
+    'tumble': 1
 })
 
 SKILL_ACTIVE_ENM = lambda target: ddict({
@@ -791,4 +792,15 @@ XTAL_ADD_PRUDENT = ddict({
     'unsheathe%': 8,
     'lrd%': 8,
     'mp': -150
+})
+
+OHS_QUEEN_BEE = ddict({
+    'type': '1h sword',
+    'base attack': 377,
+    'base stability': 80,
+    'refine': 15,
+    'wind element': 1,
+    'atk%': 8,
+    'ppierce%': 40,
+    'aspd+': 1000
 })

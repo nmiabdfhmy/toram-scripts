@@ -61,7 +61,7 @@ class Iterate_Builds:
                 totalDMG += contexts[-1].calculate()['average damage']
             
             for requirement in self.requirements:
-                if contexts[-1].data[requirement] >= self.requirements[requirement]:
+                if contexts[-1].data[requirement] >= self.requirements[requirement] or contexts[-1].stats[requirement] >= self.requirements[requirement]:
                     continue
                 else:
                     break

@@ -30,7 +30,7 @@ character_base = ddict({
     }),
     'sub': ddict({
         'type': '1h sword',
-        'base attack': 420,
+        'base attack': 380,
         'base stability': 80,
         'refine': 15
     }),
@@ -38,9 +38,9 @@ character_base = ddict({
         'aspd%': 50
     }),
     'food': ddict({
-        'watk+': 100,
+        'str+': 30,
         'cr+': 30,
-        'mp': 1000,
+        'mp': 1000+100,
         'ampr+': 30,
         'dte%': 11
     }),
@@ -122,21 +122,22 @@ DTE = ddict({
 
 items = ddict({
     'base stats': [BASE_STATS('str', 'agi')],
-    'main': [DTE],
+    'main': [OHS_PCR, OHS_QUEEN_BEE, OHS_ASCDCDCR_SCD],
     'armor': [ARMOR_DTESCDCR, ARMOR_DTECDCDCR],
-    'add': [ADD_COOKIE_EARRINGS, ADD_XMAS_TREE, ADD_NAIATA_TIARA],
-    'ring': [RING_GLOWING_SEA_TALISMAN],
-    #'avatar 1': [AVATAR_ACC_SRD, AVATAR_ACC_PP_AMPR],
-    #'avatar 2': [AVATAR_TOP_SRD, AVATAR_TOP_PPIERCE],
-    #'avatar 3': [AVATAR_BOT_SRD, AVATAR_BOT_PPIERCE],
+    'add': [ADD_XMAS_TREE, ADD_KITTY_TAIL],
+    'ring': [RING_GLOWING_SEA_TALISMAN, RING_HALLUCINATION_SPORE],
+    'avatar 1': [AVATAR_ACC_SRD, AVATAR_ACC_PP_AMPR],
+    'avatar 2': [AVATAR_TOP_SRD, AVATAR_TOP_PPIERCE],
+    'avatar 3': [AVATAR_BOT_SRD, AVATAR_BOT_PPIERCE],
     'attack buff': [POTION_PEN_OIL],
+    'berserk': [SKILL_ACTIVE_BERSERK_OHS, ddict({})]
     #'cp': [ddict({'atk%': 10, 'aspd%': 100})]
 })
 
 xtals = ddict({
     'main xtal': {'choices': [XTAL_W_HEXTER, XTAL_W_DEVIL_DANGO, XTAL_W_VLAM], 'slots': 2},
-    'armor xtal': {'choices': [XTAL_ARM_ARACHNIDEMON, XTAL_ARM_DOC_POM, XTAL_ARM_YUVERIA, XTAL_ANY_BLACK_SHADOW, XTAL_ARM_DX_FIGHTER], 'slots': 2},
-    'add xtal': {'choices': [XTAL_ADD_ROYAL_OX_KING, XTAL_ADD_JUNIOR, XTAL_ADD_DARK_LORD], 'slots': 2},
+    'armor xtal': {'choices': [XTAL_ARM_DOC_POM, XTAL_ARM_DX_FIGHTER, XTAL_ARM_YUVERIA, XTAL_ARM_ARACHNIDEMON, XTAL_ANY_BLACK_SHADOW], 'slots': 2},
+    'add xtal': {'choices': [XTAL_ADD_ROYAL_OX_KING, XTAL_ADD_JUNIOR, XTAL_ADD_DARK_LORD, XTAL_ADD_ALFENIX], 'slots': 2},
     'ring xtal': {'choices': [XTAL_ANY_BLACK_SHADOW, XTAL_ANY_GRAVICEP, XTAL_ANY_AGELADANIOS], 'slots': 2},
     #'food choice': {'choices': [ddict({'str+': 30}), ddict({'agi+': 30})], 'slots': 1}
 })

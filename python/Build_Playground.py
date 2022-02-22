@@ -16,5 +16,5 @@ if __name__ == '__main__':
     #items['main'] = [UPDATE_STATS(OHS_ASCDCDCR_SCD, {'cd%': 8, 'base attack': 377})]
     #if target['graze'] == False: character_base['berserk'] = ddict({})
 
-    example = Iterate_Builds(character_base, items, xtals, target, skills, requirements={'cr': 125})
+    example = Iterate_Builds(character_base, items, xtals, target, skills, requirements={'cr': 125, 'tumble': 1})
     best, bestBuild, bestStats = example.iterate()
